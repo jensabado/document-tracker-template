@@ -1,0 +1,68 @@
+body {
+	font-family: "Poppins", sans-serif !important;
+}
+
+table {
+	width: 100%;
+	border: 1px solid black;
+}
+
+th,
+td {
+	text-align: center;
+	border: 1px solid black;
+}
+
+.custom_header {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+}
+
+.btn-primary {
+	background-color: #274c43 !important;
+	border-color: #274c43 !important;
+	font-weight: 700;
+}
+
+.btn-primary:hover {
+	background-color: #1e3832 !important;
+	border-color: #1e3832 !important;
+}
+
+.container-fluid {
+	padding: 0px 350px;
+}
+
+#printed_info {
+	display: none;
+}
+
+#header_logo {
+	display: none !important;
+}
+
+@media print {
+	#print_page {
+		display: none;
+	}
+
+	@page {
+		margin: 0;
+	}
+	body {
+		margin: 1.6cm;
+	}
+
+	.container-fluid {
+		padding: 0px;
+	}
+
+	#printed_info {
+		display: flex;
+	}
+
+	#header_logo {
+		display: flex !important;
+	}
+}

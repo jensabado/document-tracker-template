@@ -1,0 +1,13 @@
+.slogo {
+	width: 100%;
+}
+@media only screen and (max-width: 768px) {
+	/* For mobile phones: */
+	.slogo {
+		width: 200px;
+	}
+}
+
+body {
+	font-family: "Poppins", sans-serif !important;
+}
